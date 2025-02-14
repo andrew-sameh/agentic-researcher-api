@@ -1,0 +1,6 @@
+from fastapi import APIRouter
+from api.endpoints import hello
+
+
+router = APIRouter()
+router.include_router(hello.router, prefix="/hello", tags=["Hello"])

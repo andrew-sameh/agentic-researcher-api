@@ -171,6 +171,24 @@ files = [
 ]
 
 [[package]]
+name = "asgi-correlation-id"
+version = "4.3.4"
+description = "Middleware correlating project logs to individual requests"
+optional = false
+python-versions = "<4.0,>=3.8"
+files = [
+    {file = "asgi_correlation_id-4.3.4-py3-none-any.whl", hash = "sha256:36ce69b06c7d96b4acb89c7556a4c4f01a972463d3d49c675026cbbd08e9a0a2"},
+    {file = "asgi_correlation_id-4.3.4.tar.gz", hash = "sha256:ea6bc310380373cb9f731dc2e8b2b6fb978a76afe33f7a2384f697b8d6cd811d"},
+]
+
+[package.dependencies]
+packaging = "*"
+starlette = ">=0.18"
+
+[package.extras]
+celery = ["celery"]
+
+[[package]]
 name = "asttokens"
 version = "3.0.0"
 description = "Annotate AST trees with source code positions"
@@ -3035,4 +3053,4 @@ propcache = ">=0.2.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "7afdec11b803ca9ce949cdfb8823b76d53047e5341470bbea264240d1267d377"
+content-hash = "13f3d5b53b04b52c3742a175e4c6461ba7827607803b0bc47c6cfbb010b88abe"
