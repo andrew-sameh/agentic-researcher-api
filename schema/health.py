@@ -1,4 +1,4 @@
 from pydantic import BaseModel
 
-class Hello(BaseModel):
+class HealthCheck(BaseModel):
     message: str
