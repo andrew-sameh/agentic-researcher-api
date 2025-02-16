@@ -1,10 +1,13 @@
 import io
 import time
-import urllib3
+
 import pdfplumber
-from langchain_core.tools import  tool
-from services.core_api_service import CoreAPIWrapper
+import urllib3
+from langchain_core.tools import tool
+
 from agent.calls_schema import SearchPapersInput
+from services.core_api_service import CoreAPIWrapper
+
 
 @tool("search-papers", args_schema=SearchPapersInput)
 def search_papers(query: str, max_papers: int = 1) -> str:
@@ -64,7 +67,9 @@ def download_paper(url: str) -> str:
     except Exception as e:
         return f"Error downloading paper: {e}"
 
+
 @tool("ask-human-feedback")
 def ask_human_feedback(question: str) -> str:
     """Ask for human feedback. You should call this tool when encountering unexpected errors."""
     return input(question)
+
