@@ -38,8 +38,9 @@ langchain-community==0.2.16
 langchain-core==0.2.43
 langchain-openai==0.1.23
 langchain-text-splitters==0.2.4
-langgraph==0.2.18
-langgraph-checkpoint==1.0.12
+langgraph==0.2.73
+langgraph-checkpoint==2.0.15
+langgraph-sdk==0.1.51
 langsmith==0.1.114
 marshmallow==3.26.1
 matplotlib-inline==0.1.7
